@@ -1,0 +1,692 @@
+/* ----------------------------------- Font and colours CSS -------------------------------------------- */
+
+@font-face {
+    font-family: 'Bellota-LightItalic';
+    src: url('../Fonts/Bellota-LightItalic.otf');
+}
+
+@font-face {
+    font-family: 'Bellota-BoldItalic';
+    src: url('../Fonts/Bellota-BoldItalic.otf');
+}
+
+/* main colours */
+
+.danger {
+    background-color: #E7473C;
+}
+
+.warning {
+    background-color: #F0AD4E;
+}
+
+.default {
+    background-color: #DDC3C7;
+}
+
+.success {
+    background-color: #2ECC71;
+}
+
+.info {
+    background-color: #349ADD;
+}
+
+.deep_blue {
+    background-color: #0043F0;
+}
+
+/* ----------------------------------- Header CSS -------------------------------------------- */
+
+nav {
+    float: right;
+    right: 1px;
+    position: absolute;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+nav a{
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.top_bar {
+    width: 100%;
+    height: 65px;
+    min-width: 1050px;
+    background-color: #20AAE5;
+    border-bottom: 0.25em solid #1894CA;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo a{
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    margin-left: 10px;
+    font-size: 50px;
+    position: relative;
+    top: 18px;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    color: #2A5099;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo_img img {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.search {
+    margin: 8px 0 0 15%;
+}
+
+.search #search_text_input {
+    border: 1px solid #E5E5E5E5;
+    float: left;
+    margin-top: 6px;
+    height: 30px;
+    outline: 0;
+    width: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button_holder {
+    background-color: #F1F1F1F1;
+    border: thin solid #E5E5E5E5;
+    cursor: pointer;
+    float: left;
+    margin-top: 6px;
+    height: 30px;
+    text-align: center;
+    width: 50px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.button_holder i {
+    margin-top: 6px;
+    color: #2A5099;
+}
+
+/* Message dropdown menu section */
+
+.dropdown_data_window {
+    background-color: #FFFFFF;
+    height: 280px;
+    border: 1px solid #DADADADA;
+    padding: 0px;
+    border-radius: 0 0 8px 8px;
+    border-top: 0;
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    top: 65px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.notification_badge {
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #F00000;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+}
+
+.resultDisplayNotification img {
+    height: 40px;
+    border-radius: 25px;
+    margin: 1px 12px 0 2px;
+    float: left;
+}
+
+.timestampSmaller {
+    font-size: 85%;
+    margin: 0;
+}
+
+/* Search bar CSS */
+
+.search_results {
+    background-color: #FFFFFF;
+    border: 1px solid #DADADADA;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 50px;
+}
+
+.search_results_footer {
+    padding: 5px 4px 0 4px;
+    height: 30px;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+    background-color: #20AAE5;
+    text-align: center;
+    position: relative;
+}
+
+.search_results_footer a {
+    color: #FFFFFF;
+} 
+    
+/* ----------------------------------- Body CSS -------------------------------------------- */
+
+body {
+    line-height: 17px;
+    background-color: #E6EAE8;
+}
+
+a {
+    color: #20AAE5;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    top: 70px;
+    position: relative;
+    padding: 0 10px;
+    width: 75%;
+    min-width: 950px;
+    height: 100%;
+}
+
+.column {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #d3d3d3;
+    z-index: -1;
+}
+
+/* User window */
+
+.user_details {
+    width: 250px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.user_details_data {
+    width: 125px;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+}
+
+.user_details img {
+    height: 125px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* main timeline */
+
+.main_column {
+    float: right;
+    width: 75%;
+    z-index: -1;
+    min-height: 170px;
+}
+
+.post_form {
+    width: 100%
+}
+
+.post_form textarea {
+    width: 85%;
+    height: 60px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    padding: 5px;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.post_form input[type="submit"] {
+    width: 10%;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3498DB;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    color: #ffffff;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    font-size: 90%;
+    position: absolute;
+    outline: 0;
+    margin: 0;
+}
+
+.post_form input[type="submit"]:hover {
+    background-color: #1086BA;
+}
+
+.post_form input[type="submit"]:active {
+    padding: 5px 4px 4px 5px;
+}
+
+.status_post {
+    width: 96%;
+    font-size: 15px;
+    padding: 0 5px;
+    min-height: 75px;
+}
+
+.post_profile_pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.post_profile_pic img {
+    border-radius: 5px;
+}
+
+.post_body {
+	margin-left: 60px;
+}
+
+.delete_button {
+    background-color: #ffffff;
+    border: none;
+    float: right;
+}
+
+.trending-words {
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    color: #3498DB;
+}
+
+.postedImage img {
+    max-height: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 5px auto;
+}
+
+/* Comments section */
+
+#comment_iframe {
+    max-height: 250px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.comment_section {
+    padding: 0 5px 5px 5px;
+}
+
+.comment_section img {
+    margin: 0 3px 3px 3px;
+    border-radius: 3px;
+}
+
+#comment_form textarea {
+    border-color: #D3D3D3D3;
+    width: 85%;
+    height: 35px;
+    border-radius: 5px;
+    color: #616060;
+    font-size: 14px;
+    margin: 3px 3px 3px 5px;
+}
+
+#comment_form input[type="submit"] {
+    border: none;
+    border-radius: 3px;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    background-color: #3498DB;
+    color: #ffffff;
+    width: 13%;
+    height: 40px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+#comment_form input[type="submit"]:hover {
+    background-color: #1086BA;
+}
+
+.newsfeedPostOptions {
+    padding: 0px;
+    text-decoration: none;
+    color: #20AAE5;
+    border: none;
+}
+
+/* Like Section */
+
+.newsfeedPostOptions iframe {
+    border: none;
+    height: 20px;
+    width: 120px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.comment_like {
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    color: #3498DB;
+    padding: 0;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.like_value {
+    display: inline;
+    font-size: 14px;
+}
+
+/* ----------------------------------- Profile Page CSS -------------------------------------------- */
+
+.profile_main_column {
+    min-width: 675px;
+    float: left;
+    width: 75%;
+    z-index: -1;
+}
+
+.profile_left {
+    top: -15px;
+    width: 17%;
+    max-width: 240px;
+    min-width: 130px;
+    float: left;
+    position: relative;
+    background-color: #37B0E9;
+    border-right: 10px solid #83D6FE;
+    color: #CBEAF8;
+    margin-right: 20px;
+    height: 100vh;
+}
+
+.profile_left img {
+    min-width: 80px;
+    width: 55%;
+    margin: 20px;
+    border: 5px solid #83D6FE;
+    border-radius: 100px;
+}
+
+.profile_info {
+    display: list-item;
+    background-color: #2980B9;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.profile_info p {
+    margin: 0 0 5px 20px;
+    word-wrap: break-word;
+}
+
+.profile_left input[type="submit"] {
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 7px 0 0 7px;
+    border: none;
+    color: #ffffff;
+}
+
+.profile_info_bottom {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+/* Friend Request Section */
+
+#accept_button {
+    width: 20%;
+    height: 28px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #2ECC71;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+#ignore_button {
+    width: 20%;
+    height: 28px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #E7473C;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+/* ----------------------------------- Messages Page CSS -------------------------------------------- */
+
+#message_textarea {
+    width: 80%;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3D3;
+    font-size: 12px;
+}
+
+#message_submit {
+    height: 41px;
+    width: 120px;
+    margin: 0;
+    position: absolute;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    background-color: #3498DB;
+}
+
+#message_submit:hover {
+    background-color: #1086BA;
+}
+
+.message {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.message#blue {
+    background-color: #3498DB;
+    border-color: #2980B9;
+    float: right;
+}
+
+.message#green {
+    background-color: #2ECC71;
+    border-color: #27AE60;
+    float: left;
+}
+
+.loaded_messages {
+    height: 75%;
+    min-height: 400px;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 10px;
+}
+
+.loaded_conversations {
+    max-height: 290px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.user_found_messages {
+    border-bottom: 1px solid #D3D3D3D3;
+    padding: 8px 8px 10px 8px;
+}
+
+.user_found_messages:hover {
+    background-color: #D3D3D3D3;
+}
+
+.user_found_messages img {
+    height: 35px;
+    float: left;
+}
+
+#grey {
+    color: #8C8C8C8C;
+}
+
+.resultDisplay {
+    padding: 5px 5px 0 5px;
+    height: 70px;
+    border-bottom: 1px solid #D3D3D3D3;
+}
+
+.resultDisplayNotification {
+    height: auto;
+    color: #1485BD;
+    padding-bottom: 20px;
+}
+
+.resultDisplay a {
+    float: none;
+}
+
+.resultDisplay:hover {
+    background-color: #EBEBEBEB;
+    text-decoration: none;
+}
+
+.liveSearchProfilePic img {
+    height: 50px;
+    border-radius: 25px;
+    margin: 1px 12px 0 2px;
+    float: left;
+}
+
+.liveSearchText {
+    background-color: transparent;
+    color: #1E96CA;
+}
+
+.liveSearchText p {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* ----------------------------------- Search Page CSS -------------------------------------------- */
+
+.search_result {
+    padding: 10px;
+    height: 100px;
+}
+
+.searchPageFriendButton {
+    float: right;
+}
+
+.searchPageFriendButton input[type='submit']{
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+.result_profile_pic {
+    float: left;
+    margin-right: 10px;
+}
+
+#search_hr {
+    margin-bottom: 0;
+}
+
+/* ----------------------------------- Search Page CSS -------------------------------------------- */
+
+.closing_text_area {
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-align: center;
+}
+
+.small_profile_pics {
+    height: 55px;
+    margin: 1px 12px 0 2px;
+}
+
+#settings_input {
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    width: 300px;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.settings_buttons {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+/* ----------------------------------- Scroll Bar CSS -------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 20px;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #D3D3D3D3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #73B6E2;
+}
